@@ -13,6 +13,6 @@ def create_app(test_config=None):
 
     @app.route('/cost')
     def cost():
-        return jsonify({'cost':2500, 'name': 'fried rice', 'quantity': '1 plate'})
+        return jsonify({'cost':2500, 'name': 'fried rice', 'quantity': '1 plate', 'deliveryDate': '2022-08-04'})
 
     return app
