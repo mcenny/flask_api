@@ -11,4 +11,8 @@ def create_app(test_config=None):
     def smiley():
         return ':)'
 
+    @app.route('/cost')
+    def cost():
+        return jsonify({'cost':2000})
+
     return app
