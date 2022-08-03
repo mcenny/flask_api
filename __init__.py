@@ -13,6 +13,6 @@ def create_app(test_config=None):
 
     @app.route('/cost')
     def cost():
-        return jsonify({'cost':20000})
+        return jsonify({'cost':200000})
 
     return app
